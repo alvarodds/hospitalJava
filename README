@@ -1,0 +1,54 @@
+Tarea 4 HOSPITAL (Parte A)
+Se trata de hacer una aplicación en Java que gestione los pacientes que se encuentran ingresados en un hospital, en modo consola. NombreApellidoTarea4Hospital el nombre del proyecto.
+Para ello utilizaremos la clase paciente. Para validar los datos además utilizaremos las expresiones regulares vista en la unidad anterior (nuevo método de validar). Para manejar los distintos pacientes debemos utilizar un ArrayList. 
+Clases que tiene nuestro proyecto
+1 clase paciente
+2 lista pacientes 
+3 clase principal con el menú de operaciones
+**La clase paciente, tendrá los siguientes atributos:
+ Nif (8 números + 1 Letra)
+  Nombre. (20 caracteres)
+Apellidos (40 caracteres)
+Habitación-Cama (3 números, un guión y 2 números)
+Dieta de tipo String. (Normal, Blanda, Liquida, Sin sal, Sin gluten, Sin lactosa, Otra) SOLO PUEDE TOMAR UN VALOR, es decir, UNA DIETA o es Blanda, o es Normal ….. etc.
+Los métodos set y get para cada atributo y el método toString.
+(Se recomienda para guardar las Dietas un array o ArrayList aunque no es obligatorio pero NO ES UN ATRIBUTO DE INSTANCIA (del objeto) ) 
+**Lista de pacientes 
+Tendrá dos atributos 
+lista que será un ArrayList
+contadorDietas que será un  HashMap<String,Integer> String para nombre de la dieta e integer para ir contando.
+OBLIGATORIO: Utilizar al menos una vez Iterator para recorrer la lista en uno de los métodos, tú decides en cual. 
+**Clase Principal
+Mediante un menú se podrán realizar determinadas operaciones:
+1.- Añadir paciente. Esta opción pedirá los datos del paciente, los validará, creará el objeto paciente y lo añadirá a una lista. Ejemplo:
+Escribe la habitación-cama: 110-2
+Escribe el NIF: 12345678Z
+Escribe nombre del paciente: Francisco
+Escribe los apellidos del paciente: Casilla Cortés
+Escribe la dieta del paciente: Blanda
+2.-Listar habitaciones. Esta opción mostrará los pacientes de la lista ordenados por número de habitación-cama. Ejemplo:
+100-1, 12345678Z, Javier Martínez Aginaga, Sin Sal
+100-2, 23456781W, Juan Manuel Mota García, Sin Sal
+105-1, 34567812Y, David Villa Sánchez, Normal 
+110-2, 56781234Q, Francisco Casilla Cortés, Blanda
+3.-Contar dietas. Esta opción nos resumirá las distintas dietas (Normal, Blanda, Liquida, Sin sal, Sin gluten, Sin lactosa, Otra) y el número de pacientes con esa dieta. 
+Ejemplo:
+-------------------- 
+DIETAS A PREPARAR 
+-------------------- 
+Dieta: Sin Sal 
+Pacientes: 2 
+-------------------- 
+Dieta: Blanda 
+Pacientes: 1 
+-------------------- 
+Dieta: Normal 
+Pacientes: 1 
+--------------------
+4.- Defensa
+5. Defensa
+6. Defensa
+0.-Salir de la aplicación.
+ 
+ 
+ 
